@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, , initial-scale=1.0">
+	<title>Artist Website</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lobster|Raleway:400,300,700|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/design.css">
+</head>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand smooth-scroll" href="#home">Start Bootstrap</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      </ul>
+      <ul class="nav navbar-nav">
+				<li><a class="smooth-scroll" href="#about">About</a></li>
+				<li><a class="smooth-scroll" href="#services">Services</a></li>
+				<li><a class="smooth-scroll" href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+	</nav>
+
+    <div id="home">
+      <div class="container">
+        <h1>One Page Wonder</h1>
+        <h2>Will Knock You Socks Off</h2>
+      </div>
+    </div>
+	  <div id="about">
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>This First Heading <span class="grey">Will Catch Your Eye</span></h2>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/circle.png" class="img-circle" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+		<div id="services">
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/circle.png" class="img-circle" alt="">
+          </div>
+          <div class="col-md-6">
+            <h2>The Second Heading  <span class="grey">Is Pretty Cool Too.</span></h2>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+
+        </div>
+      </div>
+		</div>
+		<!--End of Review-->
+
+		<div id="contact">
+      <div class="container">
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>The Third Heading <span class="grey">Will Seal the Deal.</span></h2>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/circle.png" class="img-circle" alt="">
+          </div>
+        </div>
+      </div>
+	</div>
+  <footer>
+    <div class="container">
+      <p>Copyright © Your Website 2014</p>    
+    </div>
+  </footer>
+	<!-- javascript	 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if( $(this).attr("class")=="smooth-scroll") {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                            $('html,body').animate({
+                                    scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                    }
+                }
+            }
+        });
+    });
+  </script>
+</body>
+</html>
