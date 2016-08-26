@@ -6,7 +6,12 @@
   background-color: transparent;
   border: none;
 }
-
+hr{
+  margin:100px 0px;
+}
+#about{
+  padding-top: 100px;
+}
 .carousel-inner>.item>a>img, .carousel-inner>.item>img{
   height:60vh;
   width: 100vw;
